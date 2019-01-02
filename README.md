@@ -1,2 +1,2 @@
-Alpine Based Docker Image
+Alpine Based Varnish Docker Image
 -----
