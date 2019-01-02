@@ -4,4 +4,4 @@ RUN apk add --no-cache varnish
 
 ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
