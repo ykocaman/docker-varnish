@@ -5,7 +5,7 @@ RUN apk add --no-cache varnish
 ENV VARNISH_PORT=80
 ENV VARNISH_BACKEND=
 ENV VARNISH_VCL_FILE=/etc/varnish/default.vcl
-ENV VARNISH_STORAGE=file,/tmp/varnish_cache.bin,2G
+ENV VARNISH_STORAGE=malloc,200M
 
 CMD /usr/sbin/varnishd -F \
 	-j unix,user=varnish \
